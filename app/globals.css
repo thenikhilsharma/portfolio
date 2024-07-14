@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins';
 }
 
 .body{
-  background-color : #393053;
+  background-color : #111;
   display: flex;
   justify-content: center;
 }
@@ -16,20 +17,20 @@
 .container{
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .sidebar{
-  background-color: #18122B;
+  background-color: #1e1e1e;
   border-radius: 20px;
   width: 20vw;
   min-height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  box-shadow: 10px 10px 20px #18122B;
+  box-shadow: 0px 0px 6px #ffda93;
 }
 
 .logo-container{
@@ -42,7 +43,7 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  box-shadow: 10px 10px 5px #100c1d;
+  box-shadow: 5px 5px 5px #100c1d;
 }
 
 .profile-data{
@@ -58,17 +59,23 @@
 .role{
   margin-top: 10px;
   font-size: 15px;
-  background-color: #0d0a16;
-  color: grey;
+  background-color: #6744028e;
+  color: white;
   padding: 5px;
   border-radius: 10px;
+  box-shadow: 2px 2px 5px #100c1d;
+}
+.role:hover{
+  box-shadow: 0px 0px 5px #ffda93;
 }
 
 .sidebar-hr{
   margin-top: 20px;
   margin-bottom: 20px;
   width: 60%;
+  height: 2px;
   size: 2;
+  background-color: #ffda93;
 }
 
 .contacts{
@@ -79,25 +86,33 @@
 
 .contacts-itemholder{
   display: flex;
+  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
+.contacts-img{
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
 .contacts-data{
   font-weight: 500;
+  cursor: pointer;
 }
 
 .main{
-  background-color: #18122B;
+  background-color: #1e1e1e;
   border-radius: 20px;
   width: 50vw;
   min-height: 90vh;
-  box-shadow: 10px 10px 15px #100c1d;
+  box-shadow: 0px 0px 6px #ffda93;
 }
 
 .navbar{
   display: flex;
-  background-color: #443C68;
+  background-color: #282828;
   justify-content: center;
   padding-right: 20px;
   padding-left: 20px;
@@ -119,10 +134,9 @@
 }
 
 .heading{
-  color: white;
-  font-family: "Playwrite PE", cursive;
+  color: #ffda93;
   font-size: 35px;
-  font-weight: 300;
+  font-weight: 400;
   padding-left: 30px;
   margin-top: 15px;
 }
@@ -130,7 +144,7 @@
 .header-breaker{
   width: 40%;
   margin-top: 10px;
-  background-color: rgb(55, 32, 101);
+  background-color: #ffda93;
   border-radius: 5px;
   height: 5px;
 }
@@ -144,6 +158,56 @@
 .bio{
   padding: 10px;
   font-size: 15px;
+}
+
+.services{
+  display: flex;
+  margin: 10px;
+  gap: 15px;
+}
+
+.services-heading{
+  font-size: 25px;
+  color: #ffda93;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.services-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ae8407a2;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100px;
+  min-width: 23vw;
+  cursor: pointer;
+}
+
+.services-card:hover{
+  background-color: #00000058;
+  box-shadow: 0px 0px 10px #ffda93;
+}
+
+.services-img-container{
+  height: 37px;
+  width: 40px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.services-content{
+  margin-left: 10px;
+}
+
+.services h3{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.services h4{
+  font-size: 10px;
 }
 
 .education-card-container{
@@ -161,6 +225,11 @@
   align-items: center;
   min-width: 23vw;
   justify-content: center;
+  cursor: pointer;
+}
+
+.education:hover{
+  background-color: #0000009f;
 }
 
 .education-heading{
@@ -189,3 +258,12 @@ footer{
 .flex{
   display: flex;
 }
+
+.invert{
+  filter: invert(1);
+}
+
+.highlight{
+  color: #ffda93;
+}
+/* services- card background-color: #0d0a16; */

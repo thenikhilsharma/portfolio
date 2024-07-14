@@ -40,24 +40,30 @@ export default function RootLayout({
               <div className="contacts">
                 <ul>
                   <li className="contacts-itemholder">
-                    img
+                    <div className="contacts-img invert">
+                      <Image src="/mail.png" alt="email" fill={true}></Image>
+                    </div>
                     <ul>
                       <li>Email</li>
                       <li className="contacts-data">nikhilsharmalku@gmai.com</li>
                     </ul>
                   </li>
                   <li className="contacts-itemholder">
-                    img
+                    <div className="contacts-img invert">
+                      <Image src="/phone.png" alt="phone" fill={true}></Image>
+                    </div>
                     <ul>
                       <li>Phone no</li>
-                      <li className="contacts-data">7985788639</li>
+                      <li className="contacts-data">+91 7985788639</li>
                     </ul>
                   </li>
                   <li className="contacts-itemholder">
-                    img
+                    <div className="contacts-img invert">
+                      <Image src="/dob.png" alt="date-of-birth" fill={true}></Image>
+                    </div>
                     <ul>
-                      <li>LinkedIn</li>
-                      <li className="contacts-data">id</li>
+                      <li>D.O.B.</li>
+                      <li className="contacts-data">12th March 2004</li>
                     </ul>
                   </li>
                 </ul>

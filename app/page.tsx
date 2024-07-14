@@ -15,25 +15,28 @@ const page = () => {
         Coding has always been more than just a skill for me; its a creative outlet and a way to solve real-world problems. Im excited to continue my journey in technology, learn new things, and contribute to innovative projects.
         </p>
       </div>
-      <hr></hr>
-      <div className='education-card-container'>
-        <ul className='education'>
-          <li className='education-heading'><h2>College:</h2></li>
-          <ul className='education-data'>
-            <li><h3>BTech, Mechanical Engineering</h3></li>
-            <li><h4>VNIT, Nagpur</h4></li>
-            <li><h4>2023 - 2027</h4></li>
-          </ul>
-        </ul>
-        <ul className='education'>
-          <li className='education-heading'><h2>School:</h2></li>
-          <ul className='education-data'>
-            <li><h3>CBSE, Secondary (XII), Science</h3></li>
-            <li><h4>Naini Valley School</h4></li>
-            <li><h4>2018-2022</h4></li>
-          </ul>
-        </ul>
+      <h2 className='services-heading'>What Im Doing</h2>
+      <div className="services">
+        <div className="services-card">
+          <div className="services-img-container">
+            <Image src="/web-design.png" className='invert' alt='web-design' fill={true} />
+          </div>
+          <div className="services-content">
+            <h3>Web Design</h3>
+            <h4>The most modern and highly quality design made at a professional level</h4>
+          </div>
+        </div>
+        <div className="services-card">
+          <div className="services-img-container">
+            <Image src="/coding.png" className='invert' alt='web-design' fill={true} />
+          </div>
+          <div className="services-content">
+            <h3>Web Development</h3>
+            <h4>High-qualtity development of sites at the professional level.</h4>
+          </div>
+        </div>
       </div>
+      {/* <video src="/reference.mp4"></video> */}
     </>
  )
 }
