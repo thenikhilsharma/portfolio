@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
 
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,6 +29,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 10px 10px 20px #18122B;
 }
 
 .logo-container{
@@ -40,12 +42,8 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  box-shadow: 10px 10px 5px #100c1d;
 }
-
-/* .logo-container .img{
-  object-fit: contain;
-  height: 100%;
-} */
 
 .profile-data{
   margin-top: 10px;
@@ -94,6 +92,7 @@
   border-radius: 20px;
   width: 50vw;
   min-height: 90vh;
+  box-shadow: 10px 10px 15px #100c1d;
 }
 
 .navbar{
@@ -121,6 +120,7 @@
 
 .heading{
   color: white;
+  font-family: "Playwrite PE", cursive;
   font-size: 35px;
   font-weight: 300;
   padding-left: 30px;
@@ -146,6 +146,32 @@
   font-size: 15px;
 }
 
+.education-card-container{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.education{
+  background-color: #00000058;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  min-width: 23vw;
+  justify-content: center;
+}
+
+.education-heading{
+  margin: 10px;
+  font-size: 17px;
+}
+
+.education-data{
+  font-size: 15px;
+}
+
 footer{
   display: flex;
   background-color: black;
@@ -160,32 +186,6 @@ footer{
   border: 2px solid red;
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.flex{
+  display: flex;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
