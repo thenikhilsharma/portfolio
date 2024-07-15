@@ -8,29 +8,64 @@
   font-family: 'Poppins';
 }
 
+.active{
+  color: red;
+  background-color: red;
+}
+
+.pending{
+  color: white;
+}
+
 .body{
   background-color : #111;
+  background-image: url("/bg.png");
   display: flex;
   justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e00;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #282828;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container{
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .sidebar{
   background-color: #1e1e1e;
   border-radius: 20px;
   width: 20vw;
-  min-height: 90vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0px 0px 6px #ffda93;
+  box-shadow: 3px 3px 6px #000000;
 }
 
 .logo-container{
@@ -67,6 +102,7 @@
 }
 .role:hover{
   box-shadow: 0px 0px 5px #ffda93;
+  transition: all 0.25s ease-in-out;
 }
 
 .sidebar-hr{
@@ -102,12 +138,23 @@
   cursor: pointer;
 }
 
+.socials{
+  position: absolute;
+  bottom: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
 .main{
   background-color: #1e1e1e;
   border-radius: 20px;
   width: 50vw;
-  min-height: 90vh;
-  box-shadow: 0px 0px 6px #ffda93;
+  height: 90vh;
+  box-shadow: 3px 3px 6px #000000;
+  overflow-y: scroll;
 }
 
 .navbar{
@@ -183,9 +230,11 @@
   height: 100px;
   min-width: 23vw;
   cursor: pointer;
+  box-shadow: 5px 5px 5px #100c1d;
 }
 
 .services-card:hover{
+  transition: all 0.25s ease-in-out;
   background-color: #00000058;
   box-shadow: 0px 0px 10px #ffda93;
 }
@@ -233,22 +282,11 @@
 }
 
 .education-heading{
-  margin: 10px;
-  font-size: 17px;
+  margin-right: 20px;
 }
 
 .education-data{
   font-size: 15px;
-}
-
-footer{
-  display: flex;
-  background-color: black;
-  justify-content: center;
-  padding: 10px;
-  color: white;
-  align-items: center;
-  height: 50px;
 }
 
 .border{

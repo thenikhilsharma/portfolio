@@ -1,0 +1,23 @@
+.portfolio-card{
+  background-color: #00000058;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  min-width: 23vw;
+  cursor: pointer;
+}
+
+.portfolio:hover{
+  background-color: #0000009f;
+}
+
+.portfolio-heading{
+  margin-right: 20px;
+}
+
+.portfolio-data{
+  font-size: 15px;
+}

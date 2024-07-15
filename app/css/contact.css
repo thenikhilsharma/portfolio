@@ -1,0 +1,32 @@
+.contact{
+    color: white;
+    gap: 10px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-request h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+input{
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+}
+
+.connect-msg-input{
+    height: 100px; /*this is not working*/
+}
+
+.connect-submit{
+    margin: 10px 0px;
+    padding: 10px 20px;
+    margin-left: 5px;
+    background-color: hsl(0, 0%, 5%);
+}
