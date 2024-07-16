@@ -4,6 +4,7 @@ import "./globals.css";
 import './css/animation.css';
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
               <h1 className="heading">About Me</h1> {/* change About Me to {heading.tag} and change according to page */}
               <hr className="header-breaker"></hr>
               {children}
+              <SpeedInsights />
             </div>
           </div>
         </div>
