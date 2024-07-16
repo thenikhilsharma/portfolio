@@ -1,26 +1,38 @@
 "use client"
 
-import React from 'react'
-import Link from 'next/link'
-import { BrowserRouter } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import NavElement from './NavElement';
 
-const navbar = () => {
+const Navigation: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleNavClick = (index: number) => {
+    setActiveIndex(index);
+  };
+
+  const navItems = [
+    { href: "/", text: "About" },
+    { href: "/resume", text: "Resume" },
+    { href: "/portfolio", text: "Portfolio" },
+    { href: "/blog", text: "Blog" },
+    { href: "/contact", text: "Contact" },
+  ];
+
   return (
-    <nav className='navbar'>
-      <ul className="nav_links">
-        <li><Link href="/"> About </Link></li>
-        <li>
-        <Link href="/resume">
-          Resume
-        </Link>
-        </li>
-          <li><Link href="/portfolio"> Portfolio </Link></li>
-          <li><Link href="/blog"> Blog </Link></li>
-          <li><Link href="/contact"> Contact </Link></li>
+    <nav className="navbar">
+      <ul className='nav_links'>
+        {navItems.map((item, index) => (
+          <NavElement
+          key={index}
+          isActive={activeIndex === index}
+            href={item.href}
+            text={item.text}
+            handleClick={() => handleNavClick(index)}
+          />
+        ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default navbar
+export default Navigation;

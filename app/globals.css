@@ -173,6 +173,18 @@
   right: 16%;
 }
 
+.Active{
+  color: #ffda93;
+}
+
+.nActive{
+  color: white;
+}
+
+.Active:hover, .nActive:hover{
+  text-shadow: 2px 2px 5px #ffda93;
+}
+
 .nav_links{
   display: flex;
   gap: 30px;
