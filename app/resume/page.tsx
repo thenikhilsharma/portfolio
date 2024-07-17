@@ -10,9 +10,6 @@ type EduCardProps = {
 
 const Educard: React.FC<EduCardProps> = ({institute, duration, course}) => {
     return(
-    <>
-    <h1 className="heading">About Me</h1>
-    <hr className="header-breaker"></hr>
     <div className="edu-body">
           <ul>
             <li className='edu-insti-name'>
@@ -29,12 +26,14 @@ const Educard: React.FC<EduCardProps> = ({institute, duration, course}) => {
             </li>
           </ul>
         </div>
-    </>
     )
 }
 
 const Resume = () => {
   return (
+    <>
+    <h1 className="heading">About Me</h1>
+    <hr className="header-breaker"></hr>
     <div className='content'>
       <div className="edu-heading">
           <div>
@@ -53,6 +52,7 @@ const Resume = () => {
       <Educard institute={"ECom Business Talks, Deepak Adhav - Video Editor"} duration={"AUG-OCT 2023"} course={"handling YouTube channel of Japan based NRI"}/>
       <Educard institute={"Bankpreneur, Aaradhya Mudghal - Video Editor"} duration={"JULY 2023"} course={"IIT BHU Alumni social handle"}/>
     </div>
+  </>
   )
 }
 
