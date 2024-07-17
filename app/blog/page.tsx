@@ -5,6 +5,9 @@ import Image from 'next/image'
 
 const blog = () => {
   return (
+    <>
+    <h1 className="heading">Blog</h1>
+    <hr className="header-breaker"></hr>
     <div className="content">
       <div className="card-container">
         <div className="card">
@@ -22,6 +25,7 @@ const blog = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 export default blog

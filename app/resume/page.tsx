@@ -3,6 +3,9 @@ import Image from 'next/image'
 
 const resume = () => {
   return (
+    <>
+    <h1 className="heading">Resume</h1>
+    <hr className="header-breaker"></hr>
     <div className="content">
       <div className='education-card-container'>
         <ul className='education'>
@@ -23,6 +26,7 @@ const resume = () => {
         </ul>
       </div>
     </div>
+    </>
   )
 }
 
