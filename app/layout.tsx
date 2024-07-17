@@ -30,8 +30,6 @@ export default function RootLayout({
             <Sidebar />
             <div className="main">
               <Navbar />
-              <h1 className="heading">About Me</h1> {/* change About Me to {heading.tag} and change according to page */}
-              <hr className="header-breaker"></hr>
               {children}
               <SpeedInsights />
               <Analytics />

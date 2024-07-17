@@ -4,6 +4,9 @@ import '../css/portfolio.css'
 
 const portfolio = () => {
   return (
+    <>
+    <h1 className="heading">Portfolio</h1>
+    <hr className="header-breaker"></hr>
     <div className="content">
         <ul className='portfolio-card'>
           <li className='portfolio-heading'><Image src="/portfolio.png" alt="portfolio" height={40} width={40} className="invert"></Image></li>
@@ -14,6 +17,7 @@ const portfolio = () => {
           </ul>
         </ul>
     </div>
+    </>
   )
 }
 

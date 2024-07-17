@@ -5,6 +5,9 @@ import './css/animation.css'
 
 const page = () => {
   return (
+    <>
+    <h1 className="heading">About Me</h1>
+    <hr className="header-breaker"></hr>
     <div className="content">
       <div className="bio">
         <p>Hi, Im <span className='highlight'>Nikhil Sharma</span>, a 2nd-year undergraduate student at <span className='highlight'>Visveswaraya National Institute of Technology (VNIT),</span> pursuing a <span className='highlight'>Bachelor of Technology in Mechanical Engineering.</span> With a passion for coding that started at the age of 10, Ive developed a strong foundation and love for technology over the years.
@@ -39,6 +42,7 @@ const page = () => {
       </div>
       {/* <video src="/reference.mp4"></video> */}
     </div>
+    </>
  )
 }
 

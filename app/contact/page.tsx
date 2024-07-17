@@ -3,6 +3,9 @@ import '../css/contact.css'
 
 const contact = () => {
   return (
+    <>
+    <h1 className="heading">Contact</h1>
+    <hr className="header-breaker"></hr>
     <div className='content'>
       <div className="contact">
         <form action="/forms" className="contact-request">
@@ -22,6 +25,7 @@ const contact = () => {
         </form>
       </div>
     </div>
+    </>
   )
 }
 
