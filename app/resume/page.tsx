@@ -10,6 +10,9 @@ type EduCardProps = {
 
 const Educard: React.FC<EduCardProps> = ({institute, duration, course}) => {
     return(
+    <>
+    <h1 className="heading">About Me</h1>
+    <hr className="header-breaker"></hr>
     <div className="edu-body">
           <ul>
             <li className='edu-insti-name'>
@@ -26,6 +29,7 @@ const Educard: React.FC<EduCardProps> = ({institute, duration, course}) => {
             </li>
           </ul>
         </div>
+    </>
     )
 }
 
