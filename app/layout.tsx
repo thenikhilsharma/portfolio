@@ -5,6 +5,7 @@ import './css/animation.css';
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
               <Navbar />
               {children}
               <SpeedInsights />
+              <Analytics />
             </div>
           </div>
         </div>

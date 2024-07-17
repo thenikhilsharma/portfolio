@@ -1,0 +1,35 @@
+.edu-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px
+}
+
+.edu-heading h1{
+    font-size: 20px;
+}
+
+.edu-body h2{
+    font-size: 17px;
+}
+
+.edu-body h3{
+    font-size: 15px;
+    margin-left: 72px;
+    color: #ffda63;
+}
+
+.edu-body ul{
+    list-style: circle;
+}
+
+.edu-insti-name{
+    margin: 5px 0 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.glow{
+    filter: drop-shadow(0px 0px 4px #ffda63);
+}
