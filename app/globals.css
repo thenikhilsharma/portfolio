@@ -8,15 +8,6 @@
   font-family: 'Poppins';
 }
 
-.active{
-  color: red;
-  background-color: red;
-}
-
-.pending{
-  color: white;
-}
-
 .body{
   background-color : #111;
   background-image: url("/bg.png");
@@ -201,8 +192,8 @@
 }
 
 .header-breaker{
-  width: 40%;
-  margin-top: 10px;
+  width: 30%;
+  margin: 10px 0 0 20px;
   background-color: #ffda93;
   border-radius: 5px;
   height: 5px;
