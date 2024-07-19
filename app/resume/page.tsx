@@ -32,7 +32,7 @@ const Educard: React.FC<EduCardProps> = ({institute, duration, course}) => {
 const Resume = () => {
   return (
     <>
-    <h1 className="heading">About Me</h1>
+    <h1 className="heading">Resume</h1>
     <hr className="header-breaker"></hr>
     <div className='content'>
       <div className="edu-heading">
