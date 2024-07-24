@@ -120,8 +120,14 @@
 
 .contacts-img{
   position: relative;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+.contacts-img-bg{
+  background-color: #353434;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .contacts-data{

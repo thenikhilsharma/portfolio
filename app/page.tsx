@@ -3,6 +3,26 @@ import Image from 'next/image';
 import './globals.css'
 import './css/animation.css'
 
+type serviceCardProps = {
+  task: string;
+  description: string;
+  imageUrl: string;
+};
+
+const ServiceCard: React.FC<serviceCardProps> = ({task, description, imageUrl}) => {
+    return(
+        <div className="services-card">
+          <div className="services-img-container">
+            <Image src={imageUrl} className='invert' alt='web-design' fill={true} />
+          </div>
+          <div className="services-content">
+            <h3>{task}</h3>
+            <h4>{description}</h4>
+          </div>
+        </div>
+    )
+}
+
 const page = () => {
   return (
     <>
@@ -21,24 +41,11 @@ const page = () => {
       </div>
       <h2 className='services-heading'>What Im Doing</h2>
       <div className="services">
-        <div className="services-card">
-          <div className="services-img-container">
-            <Image src="/web-design.png" className='invert' alt='web-design' fill={true} />
-          </div>
-          <div className="services-content">
-            <h3>Web Design</h3>
-            <h4>The most modern and highly quality design made at a professional level</h4>
-          </div>
-        </div>
-        <div className="services-card">
-          <div className="services-img-container">
-            <Image src="/coding.png" className='invert' alt='web-design' fill={true} />
-          </div>
-          <div className="services-content">
-            <h3>Web Development</h3>
-            <h4>High-qualtity development of sites at the professional level.</h4>
-          </div>
-        </div>
+        <ServiceCard task={"Web Design"} description={"The most modern and highly quality design made at a professional level"} imageUrl={"/web-design.png"}/>
+        <ServiceCard task={"Web Development"} description={"High-qualtity development of sites at the professional level."} imageUrl={"/coding.png"}/>
+      </div>
+      <div className="services">
+        <ServiceCard task={"Video Editing"} description={"Professional Video Editing on Premier Pro and After Effects"} imageUrl={"/coding.png"}/>
       </div>
       {/* <video src="/reference.mp4"></video> */}
     </div>

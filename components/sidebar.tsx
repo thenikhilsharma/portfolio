@@ -6,7 +6,7 @@ const sidebar = () => {
   return (
       <div className="sidebar">
               <div className="logo-container">
-                <Image className="img" src="/profile.jpg" alt="profile" fill={true}/>
+                <Image className="img" src="/profile2.jpg" alt="profile" fill={true}/>
               </div>
               <div className="profile-data">
                 <h1>
@@ -22,17 +22,21 @@ const sidebar = () => {
               <div className="contacts">
                 <ul>
                   <li className="contacts-itemholder">
-                    <div className="contacts-img invert">
-                      <Image src="/mail.png" alt="email" fill={true}></Image>
+                      <div className="contacts-img-bg">
+                    <div className="contacts-img">
+                        <Image src="/mail.png" alt="email" fill={true}></Image>
+                      </div>
                     </div>
                     <ul>
                       <li>Email</li>
-                      <li className="contacts-data">nikhilsharmalku@gmai.com</li>
+                      <li className="contacts-data">nikhilsharmalku@gmail.com</li>
                     </ul>
                   </li>
                   <li className="contacts-itemholder">
-                    <div className="contacts-img invert">
-                      <Image src="/phone.png" alt="phone" fill={true}></Image>
+                      <div className="contacts-img-bg">
+                    <div className="contacts-img">
+                        <Image src="/phone.png" alt="phone" fill={true}></Image>
+                      </div>
                     </div>
                     <ul>
                       <li>Phone no</li>
@@ -40,8 +44,10 @@ const sidebar = () => {
                     </ul>
                   </li>
                   <li className="contacts-itemholder">
-                    <div className="contacts-img invert">
-                      <Image src="/dob.png" alt="date-of-birth" fill={true}></Image>
+                      <div className="contacts-img-bg">
+                    <div className="contacts-img">
+                        <Image src="/dob.png" alt="date-of-birth" fill={true}></Image>
+                      </div>
                     </div>
                     <ul>
                       <li>D.O.B.</li>
